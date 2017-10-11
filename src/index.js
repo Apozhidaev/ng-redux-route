@@ -3,11 +3,13 @@ import ngRoute from 'angular-route';
 
 import routerMiddleware from './router-middleware';
 
-import { setLocationUrl, setLocationSearch } from './action-creaters';
+import { init, setLocation } from './action-creaters';
+import router from './router-reducer';
 
 export default angular
-  .module('ng-redux-router', [ngRoute])
+  .module('ng-redux-route', [ngRoute])
   .factory('ngRouterMiddleware', routerMiddleware)
   .name;
 
-export const routerActions = { setLocationUrl, setLocationSearch };
+export const routeActions = { init, setLocation };
+export const routeReducer = router;

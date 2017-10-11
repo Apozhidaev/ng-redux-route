@@ -1,10 +1,10 @@
-import { SET_LOCATION_URL, SET_LOCATION_SEARCH } from './action-types';
+import { INIT, SET_LOCATION } from './action-types';
 
 
 export default (state = {}, action) => {
   switch (action.type) {
-    case SET_LOCATION_URL:
-    case SET_LOCATION_SEARCH:
+    case INIT:
+    case SET_LOCATION:
       return action.router;
     default:
       return state;

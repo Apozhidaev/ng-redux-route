@@ -1,16 +1,15 @@
-import { SET_LOCATION_URL, SET_LOCATION_SEARCH } from './action-types';
+import { INIT, SET_LOCATION } from './action-types';
 
 
-export function setLocationUrl(url, replace = false) {
+export function init() {
   return {
-    type: SET_LOCATION_URL,
-    payload: { url, replace },
+    type: INIT,
   };
 }
 
-export function setLocationSearch(params, replace = false) {
+export function setLocation(setters) {
   return {
-    type: SET_LOCATION_SEARCH,
-    payload: { params, replace },
+    setters,
+    type: SET_LOCATION,
   };
 }
