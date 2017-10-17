@@ -1,6 +1,6 @@
 {
   "name": "ng-redux-route",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Redux middleware for use with Angular Router",
   "main": "./lib/index.js",
   "repository": {

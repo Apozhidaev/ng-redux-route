@@ -7,7 +7,7 @@ import { combineReducers } from 'redux';
 import ngRedux from 'ng-redux';
 import createLogger from 'redux-logger';
 import ngReduxRoute, { routeActions, routeReducer } from 'ng-redux-route';
-import rootReducer from './redux/store/reducer';
+
 
 const rootReducer = combineReducers({
   //app: appReducer
