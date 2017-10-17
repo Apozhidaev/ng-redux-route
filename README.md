@@ -1,5 +1,7 @@
 # ng-redux-route
 
+### Usage:
+
 ```javascript
 import angular from 'angular';
 import ngRoute from 'angular-route';
@@ -33,8 +35,6 @@ const app = angular.module('app', [
 
 export default app;
 ```
-
-### Usage:
 
 #### setLocation(setters)
 
