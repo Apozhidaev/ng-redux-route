@@ -64,3 +64,29 @@ this.setLocation([
 
 ```
 see [ngRedux documentation](https://github.com/wbuchwalter/ng-redux#api).
+
+#### Location Helpers
+
+setUrl(url, [replace = false])
+
+setPath(path, [replace = false])
+
+setSearch(search, [paramValue, replace = false])
+
+setHash(hash, [replace = false])
+
+setState(state, [replace = false])
+
+```javascript
+import { locationHelpers } from 'ng-redux-route';
+
+locationHelpers.setUrl('/some-url', true)
+// {
+//   type: '@@ngReduxRoute/setLocation',
+//   setters: [
+//     {fn: "url", args: ['/some-url']},
+//     {fn: "replace"},
+//   ]
+// }
+
+```

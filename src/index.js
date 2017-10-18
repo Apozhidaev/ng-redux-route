@@ -4,7 +4,8 @@ import ngRoute from 'angular-route';
 import routerMiddleware from './router-middleware';
 
 import { init, setLocation } from './action-creaters';
-import router from './router-reducer';
+import { setUrl, setPath, setSearch, setHash, setState } from './location-helpers';
+import _routeReducer from './router-reducer';
 
 export default angular
   .module('ng-redux-route', [ngRoute])
@@ -12,4 +13,5 @@ export default angular
   .name;
 
 export const routeActions = { init, setLocation };
-export const routeReducer = router;
+export const locationHelpers = { setUrl, setPath, setSearch, setHash, setState };
+export const routeReducer = _routeReducer;
