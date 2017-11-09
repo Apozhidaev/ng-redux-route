@@ -1,7 +1,7 @@
 {
   "name": "ng-redux-route",
-  "version": "0.2.2",
-  "description": "Redux middleware for use with Angular Router",
+  "version": "1.0.5",
+  "description": "Redux middleware for use with Angular Route",
   "main": "./lib/index.js",
   "repository": {
     "type": "git",

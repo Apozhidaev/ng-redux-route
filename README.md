@@ -26,10 +26,10 @@ const app = angular.module('app', [
       level: 'info',
       collapsed: true,
     });
-    $ngReduxProvider.createStoreWith(rootReducer, ['ngRouterMiddleware', logger]);
+    $ngReduxProvider.createStoreWith(rootReducer, ['ngRouteMiddleware', logger]);
   })
   .run(($ngRedux) => {
-    $ngRedux.dispatch(routeActions.init());
+    
   })
   .name;
 
